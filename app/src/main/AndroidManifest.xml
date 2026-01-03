@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InformationBook">
         <activity
+            android:name=".WondersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MuesumsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LeadersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CountriesActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
