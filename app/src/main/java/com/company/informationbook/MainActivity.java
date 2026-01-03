@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private ArrayList<ModelClass> arrayList;
-
+    private AdapterClass adapter;
 
 
     @Override
@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add(modelClass3);
         arrayList.add(modelClass4);
 
-
-
+        adapter = new AdapterClass(arrayList,this);
+        recyclerView.setAdapter(adapter);
 
     }
 }
